@@ -1,0 +1,62 @@
+[
+    {
+        "name": "John Smith",
+        "age": "45",
+        "gender": "Male",
+        "condition": "Hypertension",
+        "recruitmentDate": "2023-08-05",
+        "location": "London",
+        "registeredGP": "St. Ann's",
+        "phoneNumber": "0123123123"
+    },
+    {
+        "name": "Robert Brown",
+        "age": "55",
+        "gender": "Male",
+        "condition": "Asthma",
+        "recruitmentDate": "2023-08-18",
+        "location": "Oxford",
+        "registeredGP": "ABC Clinic",
+        "phoneNumber": "0123123123"
+    },
+    {
+        "name": "Sarah Davis",
+        "age": "28",
+        "gender": "Female",
+        "condition": "Migraine",
+        "recruitmentDate": "2023-08-19",
+        "location": "Oxford",
+        "registeredGP": "ABC Clinic",
+        "phoneNumber": "0123123123"
+    },
+    {
+        "name": "Jane Johnson",
+        "age": "32",
+        "gender": "Female",
+        "condition": "Diabetes",
+        "recruitmentDate": "2023-08-01",
+        "location": "Oxford",
+        "registeredGP": "ABC Clinic",
+        "phoneNumber": "0123123123"
+    },
+    {
+        "name": "Mary Johnson",
+        "age": "32",
+        "gender": "Female",
+        "condition": "Diabetes",
+        "recruitmentDate": "2023-08-16",
+        "location": "Oxford",
+        "registeredGP": "ABC Clinic",
+        "phoneNumber": "0123123123"
+    },
+    {
+        "name": "William Clark",
+        "age": "50",
+        "gender": "Male",
+        "condition": "Arthritis",
+        "recruitmentDate": "2023-08-20",
+        "location": "Oxford",
+        "registeredGP": "ABC Clinic",
+        "phoneNumber": "0123123123"
+    }
+]
