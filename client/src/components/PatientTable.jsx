@@ -9,6 +9,7 @@ const PatientTable = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [sortedPatientData, setSortedPatientData] = useState([]);
 
+  // API endpoints
   const GET_ALL_PATIENT_DETAILS_API =
     "http://localhost:8080/getAllPatientDetails";
 
@@ -20,6 +21,11 @@ const PatientTable = () => {
   const DELETE_PATIENT_DETAILS_API = (id) =>
     `http://localhost:8080/deletePatientById/${id}`;
 
+  const togglePopup = () => {
+    setPopupVisible(!isPopupVisible);
+  };
+
+  // Handles GET method
   const fetchData = async () => {
     try {
       const response = await fetch(GET_ALL_PATIENT_DETAILS_API);
@@ -40,6 +46,7 @@ const PatientTable = () => {
     fetchData();
   }, [patientData]);
 
+  // Handles POST method
   const handleFormSubmit = async (formData) => {
     try {
       const response = await fetch(ADD_PATIENT_DETAILS_API, {
@@ -62,10 +69,7 @@ const PatientTable = () => {
     }
   };
 
-  const togglePopup = () => {
-    setPopupVisible(!isPopupVisible);
-  };
-
+  // Handles UPDATE method
   const handleUpdate = async (data) => {
     console.log(data);
     const patientToUpdate = patientData.find(
@@ -95,6 +99,7 @@ const PatientTable = () => {
     }
   };
 
+  // Handles DELETE method
   const handleDelete = async (id) => {
     try {
       await fetch(DELETE_PATIENT_DETAILS_API(id), {
@@ -126,7 +131,7 @@ const PatientTable = () => {
     togglePopup();
     setFormInitialData(null);
   };
-  // [TODO: add error handling, empty response data]
+  
   return (
     <div className="p-4">
       {isLoading && <p>Loading...</p>}
