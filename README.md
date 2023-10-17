@@ -33,7 +33,7 @@ The following project contains four API endpoints to initiate CRUD (Create, Read
 
 - The following application allows insertion of patient data. It serves as a platform to recruit clinical trail patients for the clinic - XYZ.
 
-![Pop-up form to edit or add patient details](pop-upForm..png)
+![Pop-up form to edit or add patient details](pop-upForm.png)
 
 - The application can be used to update existing patient data or delete it.
 - The data are stored within an in-memory storage in the server. For this application the [h2 in-memory](https://www.baeldung.com/spring-boot-h2-database) has been utilized.
